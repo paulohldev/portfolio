@@ -1,0 +1,11 @@
+/* configurações */
+@import url("global/global.css");
+
+/* componentes */
+@import url("componentes/cores.css");
+@import url("componentes/tipografia.css");
+
+/* estilos */
+@import url("estilos/header.css");
+@import url("estilos/intro.css");
+@import url("estilos/sobre.css");

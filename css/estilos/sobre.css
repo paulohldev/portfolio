@@ -1,0 +1,23 @@
+.sobre {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-content: center;
+  gap: 20px;
+}
+
+.sobre h1 {
+  margin-bottom: 20px;
+}
+
+.sobre-conteudo {
+  max-width: 72ch;
+}
+
+.sobre img {
+  justify-self: end;
+}
+
+.sobre p + p {
+  margin-top: 40px;
+}

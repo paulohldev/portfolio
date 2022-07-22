@@ -1,0 +1,22 @@
+.intro-bg {
+  background-image: url("../../img/intro-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  min-height: 726px;
+  /* max-height: 100%; */
+}
+
+.intro {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.intro h1 {
+  margin-bottom: 12px;
+}
+
+.intro p + p {
+  margin-bottom: 72px;
+  margin-top: 4px;
+}

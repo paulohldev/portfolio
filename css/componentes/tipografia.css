@@ -1,0 +1,25 @@
+/* space grotesk */
+
+.sp-b-01 {
+  font: 700 2rem/1 "Space Grotesk", sans-serif;
+}
+
+.sp-b-02 {
+  font: 700 3rem/1 "Space Grotesk", sans-serif;
+}
+
+.sp-b-03 {
+  font: 700 1.5rem/1 "Space Grotesk", sans-serif;
+}
+
+.in-r-01 {
+  font: 400 1.125rem/1.5 "Inter", sans-serif;
+}
+
+.in-sb {
+  font: 600 1.125rem/1.5 "Inter", sans-serif;
+}
+
+.in-b {
+  font: 700 1.125rem/1.5 "Inter", sans-serif;
+}
