@@ -4,6 +4,7 @@
   grid-template-columns: 2fr 1fr;
   align-content: center;
   gap: 20px;
+  margin-bottom: 100px;
 }
 
 .sobre h1 {

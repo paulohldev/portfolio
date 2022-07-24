@@ -1,0 +1,31 @@
+.projetos-bg {
+  background-image: url("../../img/projetos-bg.png");
+  min-height: 726px;
+}
+
+.projetos h1 {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.meusProjetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.meusProjetos div {
+  background-color: var(--az-03);
+  min-height: 330px;
+  border-radius: 4px;
+}
+
+.meusProjetos-itens {
+  display: grid;
+  text-align: center;
+}
+
+.meusProjetos-itens div {
+  text-align: left;
+}
