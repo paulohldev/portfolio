@@ -6,26 +6,36 @@
 .projetos h1 {
   text-align: center;
   padding-top: 100px;
+  margin-bottom: 40px;
 }
 
 .meusProjetos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin-top: 40px;
 }
 
-.meusProjetos div {
+.meusProjetos > div {
   background-color: var(--az-03);
   min-height: 330px;
   border-radius: 4px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .meusProjetos-itens {
   display: grid;
-  text-align: center;
+  grid-template-rows: 1fr fit-content(100%);
+  padding: 20px;
 }
 
-.meusProjetos-itens div {
-  text-align: left;
+.meusProjetos-itens h2 {
+  place-self: center;
+}
+
+.meusProjetos-itens p {
+  line-height: 1;
+}
+
+.meusProjetos-itens p + p {
+  margin-top: 4px;
 }
