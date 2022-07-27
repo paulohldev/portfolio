@@ -1,0 +1,46 @@
+.formacao {
+  margin-top: 72px;
+}
+
+.formacao::after {
+  content: "";
+  display: block;
+  margin-top: 40px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--az-01);
+}
+
+.formacao h1 {
+  width: max-content;
+  margin-bottom: 40px;
+}
+
+.formacao h1 span {
+  display: block;
+}
+
+.formacoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.formacoes h3 {
+  margin-bottom: 2px;
+}
+
+.formacoes h2,
+.formacoes h3 {
+  line-height: 1.4;
+}
+
+.formacoes span {
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.formacoes h2 {
+  text-transform: uppercase;
+}
