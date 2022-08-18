@@ -13,7 +13,7 @@
 
 .intro h1 {
   margin-bottom: 12px;
-  animation: slideIn 0.5s forwards;
+  animation: slideIn 250ms forwards;
 }
 
 .intro p + p {
@@ -22,9 +22,9 @@
 }
 
 .intro p:first-child {
-  animation: Bounce 0.5s forwards;
+  animation: Bounce 500ms forwards;
 }
 
 .intro p:last-child {
-  animation: Bounce 0.8s forwards;
+  animation: Bounce 800ms forwards;
 }
