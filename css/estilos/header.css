@@ -18,7 +18,7 @@
 
 .header a {
   color: var(--w);
-  padding: 12px 35px;
+  padding: 10px 33px;
   border-radius: 6px;
   transition: color 0.3s;
 }
@@ -28,11 +28,13 @@
 }
 
 .header a[href="#contato"] {
-  background-color: var(--rx-01);
+  background-color: #87a2fb;
+  border: 2px solid #87a2fb;
   transition: background 0.3s;
 }
 
 .header a[href="#contato"]:hover {
-  background-color: #7f27b7;
+  background-color: transparent;
+  border: 2px solid #87a2fb;
   color: var(--w);
 }

@@ -1,9 +1,7 @@
 function scrollLink() {
   const menuLista = document.querySelectorAll('.js-menu a[href^="#"]');
-  // const arrowDown = document
-  //   .querySelector('.intro a[href^="#"]')
-  //   .getAttribute("href");
-  // console.log(arrowDown);
+  const arrowDown = document.querySelector('.intro a[href^="#"]');
+  console.log(arrowDown);
   if (menuLista.length) {
     function scrollInterno(event) {
       event.preventDefault();
@@ -15,7 +13,7 @@ function scrollLink() {
       });
     }
 
-    // arrowDown.addEventListener("click", scrollInterno);
+    arrowDown.addEventListener("click", scrollInterno);
 
     menuLista.forEach((item) => {
       item.addEventListener("click", scrollInterno);
