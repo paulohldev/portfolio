@@ -7,6 +7,7 @@
   --az-03: #7094ca;
   --az-02: #97b8e9;
   --az-01: #b5d3ff;
+  --az-00: #87a2fb;
   --bg: #eef5ff;
 
   /* secundaria */
@@ -46,6 +47,9 @@
 }
 .a1 {
   color: var(--az-01);
+}
+.a0 {
+  color: var(--az-00);
 }
 
 /* secundária */

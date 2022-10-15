@@ -1,9 +1,11 @@
 .intro-bg {
-  background-image: url("../../img/intro-bg.png");
+  background-image: url("../../img/intro-bg.webp");
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   min-height: 726px;
+  position: relative;
+  z-index: 2;
 }
 
 .intro {

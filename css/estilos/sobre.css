@@ -1,9 +1,9 @@
 .sobre {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   align-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-bottom: 100px;
 }
 
@@ -13,12 +13,57 @@
 
 .sobre-conteudo {
   max-width: 72ch;
+  position: relative;
 }
 
-.sobre img {
-  justify-self: end;
+.sobre-conteudo::before {
+  content: url("../../img/circle.png");
+  position: absolute;
+  top: -250px;
+  left: -250px;
+  z-index: -1;
 }
 
 .sobre p + p {
   margin-top: 40px;
+}
+
+.sobre-img {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sobre-img img {
+  position: absolute;
+}
+
+.sobre-img img:nth-child(1) {
+  top: 0;
+  left: 20px;
+  animation: bounce 800ms infinite alternate;
+}
+
+.sobre-img img:nth-child(2) {
+  left: 35%;
+  top: 120px;
+}
+
+.sobre-img img:nth-child(3) {
+  right: 25%;
+  top: 0px;
+  animation: spin 800ms infinite alternate;
+}
+
+.sobre-img img:nth-child(4) {
+  left: 10%;
+  bottom: 20px;
+  animation: spin 800ms infinite alternate;
+}
+
+.sobre-img img:nth-child(5) {
+  right: 25%;
+  bottom: 20px;
 }

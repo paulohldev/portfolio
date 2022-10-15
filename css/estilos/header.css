@@ -24,7 +24,7 @@
 }
 
 .header a:hover {
-  color: var(--p-06);
+  color: var(--az-00);
 }
 
 .header a[href="#contato"] {
@@ -35,6 +35,6 @@
 
 .header a[href="#contato"]:hover {
   background-color: transparent;
-  border: 2px solid #87a2fb;
+  border: 2px solid var(--az-00);
   color: var(--w);
 }
