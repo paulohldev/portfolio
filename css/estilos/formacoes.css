@@ -44,3 +44,17 @@
 .formacoes h2 {
   text-transform: uppercase;
 }
+
+@media (max-width: 500px) {
+  .formacao h1 {
+    font-size: 2rem;
+  }
+  .formacoes span {
+    font-size: 0.875rem;
+  }
+  .formacoes p,
+  .formacoes h3,
+  .formacoes h2 {
+    font-size: 1rem;
+  }
+}

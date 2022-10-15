@@ -27,3 +27,12 @@
   font-size: 1rem;
   text-align: center;
 }
+
+@media (max-width: 500px) {
+  .tecnologias h1 {
+    font-size: 2rem;
+  }
+  .tecnologias p {
+    font-size: 1rem;
+  }
+}

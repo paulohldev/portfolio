@@ -30,3 +30,20 @@
 .intro p:last-child {
   animation: Bounce 800ms forwards;
 }
+
+@media (max-width: 500px) {
+  .intro {
+    padding: 0 20px;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  .intro p {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  .intro p + p {
+    margin-top: 0px;
+  }
+}
