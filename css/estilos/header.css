@@ -38,3 +38,10 @@
   border: 2px solid var(--az-00);
   color: var(--w);
 }
+
+@media (max-width: 860px) {
+  .header-menu,
+  .header a[href="#contato"] {
+    display: none;
+  }
+}

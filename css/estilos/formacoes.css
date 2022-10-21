@@ -45,6 +45,27 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 1000px) {
+  .formacoes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .formacao {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formacoes {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .formacao h1 {
+    width: initial;
+  }
+}
+
 @media (max-width: 500px) {
   .formacao h1 {
     font-size: 2rem;

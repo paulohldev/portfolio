@@ -24,6 +24,12 @@
   margin-bottom: 40px;
 }
 
+@media (max-width: 1000px) {
+  .footer-bg {
+    margin-top: 60px;
+  }
+}
+
 @media (max-width: 500px) {
   .redes-sociais h1,
   .redes-sociais a {

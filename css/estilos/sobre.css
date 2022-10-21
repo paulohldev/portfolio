@@ -25,7 +25,7 @@
 }
 
 .sobre p + p {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .sobre-img {
@@ -66,6 +66,17 @@
 .sobre-img img:nth-child(5) {
   right: 25%;
   bottom: 20px;
+}
+
+@media (max-width: 1000px) {
+  .sobre-img {
+    display: none;
+  }
+  .sobre {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 500px) {
