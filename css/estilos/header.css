@@ -5,6 +5,7 @@
   flex-wrap: wrap;
   padding-top: 40px;
   padding-bottom: 40px;
+  position: relative;
 }
 
 .header-menu {
@@ -27,21 +28,81 @@
   color: var(--az-00);
 }
 
-.header a[href="#contato"] {
+.header a[href='#contato'] {
   background-color: #87a2fb;
   border: 2px solid #87a2fb;
   transition: background 0.3s;
 }
 
-.header a[href="#contato"]:hover {
+.header a[href='#contato']:hover {
   background-color: transparent;
   border: 2px solid var(--az-00);
   color: var(--w);
 }
 
+.menuMobile {
+  display: none;
+}
+
 @media (max-width: 860px) {
   .header-menu,
-  .header a[href="#contato"] {
+  .header a[href='#contato'] {
     display: none;
+  }
+
+  .menuMobile {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 10px 0;
+  }
+
+  .header-menu.ativo {
+    background-color: var(--az-00);
+    position: fixed;
+    left: 0;
+    gap: 20px;
+    gap: 0;
+    top: 0;
+    padding-left: 20px;
+    padding-top: 60px;
+    z-index: 3;
+    min-height: 100vh;
+    width: 50vw;
+    animation: animeLeft 0.3s forwards;
+  }
+
+  .header-menu.ativo li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .header-menu.ativo,
+  .header a[href='#contato'].ativo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header a[href='#contato'].ativo {
+    background: none;
+    border: none;
+    transition: color 0.3s;
+    font-weight: 400;
+  }
+
+  .header-menu.ativo li a:hover {
+    color: var(--rx-01);
+  }
+}
+
+@media (max-width: 550px) {
+  .header h1 {
+    font-size: 1.5rem;
   }
 }
