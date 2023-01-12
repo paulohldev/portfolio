@@ -1,5 +1,5 @@
 .intro-bg {
-  background-image: url("../../img/intro-bg.webp");
+  background-image: url('../../img/intro-bg.webp');
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -31,17 +31,22 @@
   animation: Bounce 800ms forwards;
 }
 
+@media (max-width: 620px) {
+  .intro h1 {
+    margin-bottom: 4.5rem;
+  }
+}
+
 @media (max-width: 500px) {
   .intro {
     padding: 0 20px;
   }
   .intro h1 {
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   .intro p {
     font-size: 1rem;
-    margin-top: 20px;
   }
   .intro p + p {
     margin-top: 0px;
