@@ -4,10 +4,7 @@ export default function initSlide() {
   const slidesElements = slide.querySelectorAll('li');
   const nextButton = document.querySelector('.controllers .next');
   const previousButton = document.querySelector('.controllers .previous');
-  const slideElementWidth = slidesElements[0].getBoundingClientRect().width;
-  const slideSectionWidth = slideSection.getBoundingClientRect();
   const stringCurrentSlide = 'current-slide';
-  console.log(slideSectionWidth);
 
   const moveSlide = (currentSlide, nextOrPrevSlide) => {
     if (nextOrPrevSlide) {
