@@ -6,41 +6,46 @@ export default function initSlide() {
   const previousButton = document.querySelector('.controllers .previous');
   const stringCurrentSlide = 'current-slide';
 
-  const moveSlide = (currentSlide, nextOrPrevSlide) => {
-    if (nextOrPrevSlide) {
-      slide.style.transform = `translateX(-${nextOrPrevSlide.offsetLeft}px)`;
-      toggleCurrentClass(currentSlide, nextOrPrevSlide);
-    } else {
-      toggleCurrentClass(currentSlide, nextOrPrevSlide);
-      slide.style.transform = `translateX(${nextOrPrevSlide}px)`;
+  const moveSlide = (currentElementSlide, nextElementSlide) => {
+    if (currentElementSlide && nextElementSlide !== null) {
+      slide.style.transform = `translateX(-${nextElementSlide.offsetLeft}px)`;
+      return toggleClass(currentElementSlide, nextElementSlide);
+    }
+    slide.style.transform = `translateX(${currentElementSlide.previousElementSibling.offsetLeft}px)`;
+    return toggleClass(
+      currentElementSlide.previousElementSibling,
+      nextElementSlide,
+    );
+  };
+
+  const toggleClass = (currentElementSlide, nextElementSlide) => {
+    if (nextElementSlide !== null) {
+      currentElementSlide.classList.remove(stringCurrentSlide);
+      nextElementSlide.classList.add(stringCurrentSlide);
     }
   };
 
-  const toggleCurrentClass = (currentSlide, nextOrPrevSlide) => {
-    currentSlide.classList.remove(stringCurrentSlide);
-    nextOrPrevSlide.classList.add(stringCurrentSlide);
+  const nextSlide = (currentElementSlide) => {
+    const nextElementSlide = currentElementSlide.nextElementSibling;
+    const firstSlide =
+      nextElementSlide === null ? slidesElements[0] : nextElementSlide;
+    moveSlide(currentElementSlide, firstSlide);
   };
 
-  const nextSlide = (currentSlide) => {
-    const nextSlide = currentSlide.nextElementSibling;
-    const firstSlide = nextSlide === null ? slidesElements[0] : nextSlide;
-    moveSlide(currentSlide, firstSlide);
-  };
-
-  const previousSlide = (currentSlide) => {
-    const previousSlide = currentSlide.previousElementSibling;
-    const lastSlide =
-      previousSlide === null
+  const previousSlide = (currentElementSlide) => {
+    const previousElementSlide = currentElementSlide.previousElementSibling;
+    const lastElementSlide =
+      previousElementSlide === null
         ? slidesElements[slidesElements.length - 1]
-        : previousSlide;
-    moveSlide(currentSlide, lastSlide);
+        : previousElementSlide;
+    moveSlide(currentElementSlide, lastElementSlide);
   };
 
   nextButton.addEventListener('click', () => {
-    const currentSlide = Array.from(slidesElements).find((slide) => {
+    const currentElementSlide = Array.from(slidesElements).find((slide) => {
       return slide.classList.contains(stringCurrentSlide);
     });
-    nextSlide(currentSlide);
+    nextSlide(currentElementSlide);
   });
 
   previousButton.addEventListener('click', () => {
