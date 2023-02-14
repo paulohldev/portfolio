@@ -3,15 +3,13 @@
   min-height: 726px;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 .meusProjetos {
-  /* position: relative; */
   max-width: 450px;
   margin: 0 auto;
-  /* overflow-x: hidden; */
+}
+
+.projetos {
+  overflow: hidden;
 }
 
 .projetos h1 {
@@ -24,25 +22,27 @@ body {
   display: flex;
   gap: 20px;
   transition: 0.3s all;
-  /* overflow-x: visible; */
+  max-width: 450px;
 }
 
 .wrapper li {
-  min-width: 450px;
   flex-shrink: 0;
-  max-width: 450px;
-  width: 90vw;
+  max-width: 100%;
+  width: 100%;
   height: 300px;
   background-color: var(--az-03);
   border-radius: 4px;
 }
 
 .wrapper li:not(.current-slide) {
+  opacity: 0.8;
   transform: scale(0.9);
 }
 
 .wrapper li.current-slide {
-  transform: scale(1.1);
+  opacity: 1;
+
+  transform: scale(1);
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -102,6 +102,6 @@ body {
     font-size: 1rem;
   }
   .wrapper li {
-    min-width: 320px;
+    width: 100%;
   }
 }

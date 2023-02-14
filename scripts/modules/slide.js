@@ -8,7 +8,7 @@ export default function initSlide() {
 
   const moveSlide = (currentElementSlide, nextElementSlide) => {
     if (currentElementSlide && nextElementSlide !== null) {
-      slide.style.transform = `translateX(-${nextElementSlide.offsetLeft}px)`;
+      slide.style.transform = `translateX(-${nextElementSlide.offsetWidth}px)`;
       return toggleClass(currentElementSlide, nextElementSlide);
     }
     slide.style.transform = `translateX(${currentElementSlide.previousElementSibling.offsetLeft}px)`;
