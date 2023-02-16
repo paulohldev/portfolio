@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.redes-sociais img[src$=".svg"] {
+.redes-sociais img[src$='.svg'] {
   width: 48px;
 }
 
@@ -34,5 +34,11 @@
   .redes-sociais h1,
   .redes-sociais a {
     font-size: 1.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .redes-sociais h1,
+  .redes-sociais a {
+    font-size: 1.125rem;
   }
 }
