@@ -61,6 +61,7 @@
 .meusProjetos-itens div {
   z-index: 2;
   background-color: var(--rx-01);
+  width: -moz-fit-content;
   width: fit-content;
   padding: 0.5rem;
   border-radius: 4px;
@@ -88,6 +89,31 @@
   object-position: top;
   position: absolute;
   border-radius: inherit;
+}
+
+.controllers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.controllers > * {
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.9;
+  border: none;
+  background-color: #7094ca;
+  transition: 2s all;
+}
+
+.controllers > *:hover {
+  opacity: 1;
+}
+
+.controllers .previous img {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 500px) {
