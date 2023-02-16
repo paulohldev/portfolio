@@ -7,17 +7,16 @@ export default function initSlide() {
   const stringCurrentSlide = 'current-slide';
 
   const moveSlide = (currentElementSlide, nextElementSlide) => {
-    if (currentElementSlide && nextElementSlide !== null) {
-      slide.style.transform = `translateX(-${nextElementSlide.offsetWidth}px)`;
+    const gap = 20;
+    if (nextElementSlide !== null) {
+      const nextSlideIndex =
+        Array.from(slidesElements).indexOf(nextElementSlide);
+      slide.style.transform = `translateX(-${
+        (nextElementSlide.offsetWidth + gap) * nextSlideIndex
+      }px)`;
       return toggleClass(currentElementSlide, nextElementSlide);
     }
-    slide.style.transform = `translateX(${currentElementSlide.previousElementSibling.offsetLeft}px)`;
-    return toggleClass(
-      currentElementSlide.previousElementSibling,
-      nextElementSlide,
-    );
   };
-
   const toggleClass = (currentElementSlide, nextElementSlide) => {
     if (nextElementSlide !== null) {
       currentElementSlide.classList.remove(stringCurrentSlide);
