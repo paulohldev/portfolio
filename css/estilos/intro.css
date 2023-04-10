@@ -1,6 +1,7 @@
 .intro-bg {
-  background-image: url('../../img/intro-bg.webp');
+  background-image: url('../../img/intro.svg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   object-fit: cover;
   min-height: 726px;

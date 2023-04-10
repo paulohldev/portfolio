@@ -1,5 +1,9 @@
 .projetos-bg {
-  background-image: url('../../img/projetos-bg.png');
+  background-image: url('../../img/projetos-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
   min-height: 726px;
 }
 

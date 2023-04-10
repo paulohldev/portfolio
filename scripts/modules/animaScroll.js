@@ -6,7 +6,7 @@ export default function animaScroll() {
   function scrollOpacity(...restElement) {
     restElement.forEach((element) => {
       element.forEach((prop) => {
-        const propNumber = prop !== HTMLLIElement ? 0.6 : 0.9;
+        const propNumber = prop !== HTMLLIElement ? 0.65 : 0.9;
         const windowUser = window.innerHeight * propNumber;
         const elementTop = prop.getBoundingClientRect().top - windowUser;
         if (elementTop < 0) {
