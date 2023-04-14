@@ -26,11 +26,15 @@
 }
 
 .intro p:first-child {
-  animation: Bounce 500ms forwards;
+  animation: Bounce 800ms forwards;
 }
 
 .intro p:last-child {
-  animation: Bounce 800ms forwards;
+  animation: Bounce 1000ms forwards;
+}
+
+#intro img {
+  animation: Bounce 1200ms forwards;
 }
 
 @media (max-width: 660px) {
